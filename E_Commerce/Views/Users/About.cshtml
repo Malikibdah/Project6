@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="container">
+    
+    <section style="text-align: center; margin-top: 50px;">
+        <h1 style="font-size: 36px; color: #333;">About Us</h1>
+        <p style="font-size: 18px; color: #666; max-width: 100%;margin: 20px auto;">
+            Welcome to MULTI SHOP, your number one source for all things fashion. We're dedicated to providing you the very best of products, with a focus on quality, customer service, and uniqueness.
+        </p>
+    </section>
+
+    <section style="margin: 50px 0; text-align: center;">
+        <h2 style="font-size: 28px; color: #333;">Our History</h2>
+        <p style="font-size: 16px; color: #666; max-width: 100%;">
+            Founded in 20XX by [Founder Name], MULTI SHOP has come a long way from its beginnings in [Starting Location]. When [Founder Name] first started out, their passion for [something unique about the founder's passion] drove them to start their own business.
+        </p>
+    </section>
+
+   
+    <section style="margin: 50px 0; text-align: center;">
+        <h2 style="font-size: 28px; color: #333;">Our Values</h2>
+        <p style="font-size: 16px; color: #666; max-width:100%; text-align: center;">
+            At MULTI SHOP, we believe in quality products, exceptional customer service, and making fashion accessible to everyone. We are committed to providing our customers with the latest trends while ensuring a seamless shopping experience.
+        </p>
+    </section>
+
+    
+    <section style="margin: 50px 0; text-align: center;">
+        <h2 style="font-size: 28px; color: #333;">Our Team</h2>
+        <p style="font-size: 16px; color: #666; max-width: 100%; text-align: center; ">
+            Our dedicated team works tirelessly to bring you the best shopping experience. Meet the people who make it all happen.
+        </p>
+        
+        <div class="team-photos" style="display: flex; justify-content: space-around; margin-top: 20px; text-align: center;">
+            
+            <img src="~/Content/img/IMG-20240815-WA0080_1.jpg" alt="Team Member 1" style=" width:30%; height: 250px;" />
+            <img src="~/Content/img/B612_20210620_125311_624.jpg" alt="Team Member 2" style=" width:30%; height:250px" />
+            <img src="~/Content/img/B612_20240815_171921_106.jpg" alt="Team Member 3" style=" width:30%; height:250px;" />
+        </div>
+    </section>
+
+    <section style="margin: 50px 0; text-align: center;">
+        <h2 style="font-size: 28px; color: #333;">Our Vision</h2>
+        <p style="font-size: 16px; color: #666; max-width: 100%; text-align: center; ">
+            Looking forward, we see a future where fashion is more than just clothes – it's an expression of self. We're excited to continue our journey and bring our customers more of what they love.
+        </p>
+    </section>
+
+    <section style="text-align: center; margin: 50px 0; text-align: center;">
+        <h2 style="font-size: 28px; color: #333;">Special Offers</h2>
+        <p style="font-size: 16px; color: #666;">Save up to 20% on selected items!</p>
+        <a href="@Url.Action("Shop")" class="btn btn-primary" style="background-color: #FFCD00; color: #000; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+            Shop Now
+        </a>
+    </section>
+</div>

@@ -1,0 +1,40 @@
+﻿@model E_Commerce.Models.User
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<head>
+    <link rel="stylesheet" href="~/Content/login/css/style.css" />
+</head>
+
+
+@using (Html.BeginForm("Login","Users",FormMethod.Post)) { 
+<div class="container clearfix">
+    <div class="form login">
+        <a class="logo" href="">
+            
+            <img src="~/Content/img/logos-1_1723928081852.png" style="width:150px;height:150px" />
+        </a>
+        <form>
+            <p>
+                <label>Email address<span>*</span></label>
+                <input name="email" type="email" required>
+            </p>
+            <p>
+                <label>Password<span>*</span></label>
+                <input name="password" type="password" required>
+            </p>
+            <p>
+                <label>
+                    <a href="#">Forgot password?</a>
+                    <a>@Html.ActionLink("Create an account", "Create", "Users")</a>
+                </label>
+                <input type="submit" value="Login" />
+            </p>
+        </form>
+
+    </div>
+    
+</div>
+}

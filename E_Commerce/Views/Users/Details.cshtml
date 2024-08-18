@@ -1,0 +1,38 @@
+﻿@model E_Commerce.Models.User
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header text-dark" style="background-color: #FFCD00;text-align:center">
+            <h1 style="color: #000;">Hello @Model.name</h1>
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <label class="form-label">
+                    @Html.DisplayNameFor(model => model.name)
+                </label>
+                <p class="form-control-plaintext">@Model.name</p>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">
+                    @Html.DisplayNameFor(model => model.email)
+                </label>
+                <p class="form-control-plaintext">@Model.email</p>
+            </div>
+            @*<div class="mb-3">
+                <label class="form-label">
+                    @Html.DisplayNameFor(model => model.password)
+                </label>
+                <p class="form-control-plaintext">@Model.password</p>
+            </div>*@
+        </div>
+        <div class="card-footer">
+            <a href="@Url.Action("Edit", "Users", new { id = Model.id })" class="btn btn-primary">Edit</a>
+            <a href="@Url.Action("Index", "Users")" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
